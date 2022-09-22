@@ -35,11 +35,3 @@
     align-items: center;
     justify-content: center;
 }
-
-%titulosHistoria{
-    display: flex;
-        align-items: center;
-        justify-content: center;
-        color: map-get($colores,colorDelca);
-        border-radius: map-get($tamanos,borderRadius);
-}

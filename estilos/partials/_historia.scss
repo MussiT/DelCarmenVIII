@@ -51,14 +51,12 @@
     .valor,
     .casaca,
     .campeones{
-        @extend %titulosHistoria;
-        background-color: white;
+      @include titulosHistoria ($colorTitulo: white);
     }
     .escudo,
     .tifa,
     .ligaNuñez{
-        @extend %titulosHistoria;
-        background-color: black;
+        @include titulosHistoria ($colorTitulo: black);
     }
     .casaca{
         grid-area: casaca;

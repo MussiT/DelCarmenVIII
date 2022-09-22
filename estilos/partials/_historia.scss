@@ -37,11 +37,7 @@
     .textoCasaca,
     .textoTifa,
     .campeonesTexto{
-        font-size: 17px;
-        grid-area: textoValores;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+       @extend %textoHistoria;
     }
     .escudo--viejo{
     grid-area: viejo;
@@ -55,24 +51,14 @@
     .valor,
     .casaca,
     .campeones{
-        grid-area: valor;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: map-get($colores,colorDelca);
+        @extend %titulosHistoria;
         background-color: white;
-        border-radius: map-get($tamanos,borderRadius);
     }
     .escudo,
     .tifa,
     .ligaNuñez{
-        grid-area: escudo;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: map-get($colores,colorDelca);
+        @extend %titulosHistoria;
         background-color: black;
-        border-radius: map-get($tamanos,borderRadius);
     }
     .casaca{
         grid-area: casaca;
@@ -115,6 +101,12 @@
     }    
     .ligaNuñez{
         grid-area: ligaNuñez;
+    }
+    .valor{
+        grid-area: valor;
+    }
+    .escudo{
+        grid-area: escudo;
     }
     }
 

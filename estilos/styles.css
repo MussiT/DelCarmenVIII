@@ -87,6 +87,11 @@
     grid-template-columns: 1fr;
     height: 100vh;
   }
+  .grillaDeInicio .santiTexto,
+.grillaDeInicio .copaTexto,
+.grillaDeInicio .neyenTexto {
+    font-size: 15px;
+  }
 }
 @media screen and (max-width: 599px) and (orientation: landscape) {
   .grillaDeInicio {
@@ -95,6 +100,11 @@
     grid-template-columns: repeat(2, 1fr);
     height: 100vh;
   }
+  .grillaDeInicio .santiTexto,
+.grillaDeInicio .copaTexto,
+.grillaDeInicio .neyenTexto {
+    font-size: 15px;
+  }
 }
 @media screen and (min-width: 600px) and (max-width: 1199px) {
   .grillaDeInicio {
@@ -102,6 +112,11 @@
     grid-template-rows: repeat(5, 1fr);
     grid-template-columns: repeat(2, 1fr);
     height: 100vh;
+  }
+  .grillaDeInicio .santiTexto,
+.grillaDeInicio .copaTexto,
+.grillaDeInicio .neyenTexto {
+    font-size: 15px;
   }
 }
 .grillaDePlantel {
@@ -259,6 +274,7 @@
   justify-content: center;
   color: #1033a3;
   background-color: white;
+  border-radius: 25px;
 }
 .grillaDeHistoria .escudo,
 .grillaDeHistoria .tifa,
@@ -269,6 +285,7 @@
   justify-content: center;
   color: #1033a3;
   background-color: black;
+  border-radius: 25px;
 }
 .grillaDeHistoria .casaca {
   grid-area: casaca;

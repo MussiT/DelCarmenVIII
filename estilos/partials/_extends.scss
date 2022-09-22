@@ -1,0 +1,45 @@
+%titulosGaleria{
+    margin: 10px;
+    padding: 5px;
+    background-color: black;
+    color:map-get($colores,colorDelca);
+    border-radius: 05px;
+    text-align: center;
+}
+
+%fotosGaleria{
+    margin: 15px;
+        border-top: 10px solid map-get($colores,colorDelca);
+        border-right: 10px solid black;
+        border-left:  10px solid black;
+        border-bottom: 10px solid map-get($colores,colorDelca);
+        width: 350px;
+        height: 300px;
+        border-radius: 05px;
+        transition: padding 0.5s;
+        &:hover{
+            padding: 6px;
+        }
+}
+
+%flexGaleria{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+%textoHistoria{
+    font-size: 17px;
+    grid-area: textoValores;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+%titulosHistoria{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        color: map-get($colores,colorDelca);
+        border-radius: map-get($tamanos,borderRadius);
+}

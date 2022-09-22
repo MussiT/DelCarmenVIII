@@ -13,70 +13,30 @@ grid-template-columns: repeat(3,auto);
 height: 100vh;
 .titulos1{
     grid-area: titulos1;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @extend %flexGaleria;
     .titulos--galeria{
-        margin: 10px;
-        padding: 5px;
-        background-color: black;
-        color:map-get($colores,colorDelca);
-        border-radius: 05px;
-        text-align: center;
-    }
+       @extend %titulosGaleria;
+        }
 }
 .fotos1{
     grid-area: fotos1;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @extend %flexGaleria;
     .fotos--galeria{
-        margin: 15px;
-        border-top: 10px solid map-get($colores,colorDelca);
-        border-right: 10px solid black;
-        border-left:  10px solid black;
-        border-bottom: 10px solid map-get($colores,colorDelca);
-        width: 350px;
-        height: 300px;
-        border-radius: 05px;
-        transition: map-get($transitions,transitionGaleria);
-        &:hover{
-            padding: 6px;
-        }
+        @extend %fotosGaleria;
     }
 }
 .titulos2{
     grid-area: titulos2;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @extend %flexGaleria;
     .titulos--galeria{
-        margin: 10px;
-        padding: 5px;
-        background-color: black;
-        color:map-get($colores,colorDelca);
-        border-radius: 05px;
-        text-align: center;
+      @extend %titulosGaleria;
     }
 }
 .fotos2{
     grid-area: fotos2;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @extend %flexGaleria;
     .fotos--galeria{
-        margin: 15px;
-        border-top: 10px solid map-get($colores,colorDelca);
-        border-right: 10px solid black;
-        border-left:  10px solid black;
-        border-bottom: 10px solid map-get($colores,colorDelca);
-        width: 350px;
-        height: 300px;
-        border-radius: 05px;
-        transition: padding 0.5s;
-        &:hover{
-            padding: 6px;
-        }
+       @extend %fotosGaleria;
     }
 }
 }

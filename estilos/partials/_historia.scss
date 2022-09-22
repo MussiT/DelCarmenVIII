@@ -3,7 +3,7 @@
     grid-template-areas:
     "cabecera cabecera cabecera"
     "valor valor valor"
-    "valores valores textoValores"
+    "bici bici textoBici"
     "escudo escudo escudo"
     "textoEscudo textoEscudo viejo"
     "textoEscudo textoEscudo nuevo"
@@ -22,17 +22,6 @@
     column-gap: 10px;
     row-gap: 10px;
     background-color: map-get($colores,colorDelca);
-    .valores--foto{
-        display: inline-block;
-        margin: 15px;
-        border-top: 15px solid map-get($colores,colorDelca);
-        border-right: 15px solid black;
-        border-left:  15px solid black;
-        border-bottom: 15px solid map-get($colores,colorDelca);
-        border-radius: 05px;
-        grid-area: valores;
-    }
-    .valores--texto,
     .textoEscudo,
     .textoCasaca,
     .textoTifa,
@@ -105,6 +94,12 @@
     }
     .escudo{
         grid-area: escudo;
+    }
+    .bici{
+        grid-area: bici;
+    }
+    .textoBici{
+        grid-area: textoBici;
     }
     }
 

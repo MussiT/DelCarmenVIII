@@ -2,17 +2,17 @@
     margin: 10px;
     padding: 5px;
     background-color: black;
-    color:map-get($colores,colorDelca);
+    color:#1033a3;
     border-radius: 05px;
     text-align: center;
 }
 
 %fotosGaleria{
     margin: 15px;
-        border-top: 10px solid map-get($colores,colorDelca);
+        border-top: 10px solid #1033a3;
         border-right: 10px solid black;
         border-left:  10px solid black;
-        border-bottom: 10px solid map-get($colores,colorDelca);
+        border-bottom: 10px solid #1033a3;
         width: 350px;
         height: 300px;
         border-radius: 05px;

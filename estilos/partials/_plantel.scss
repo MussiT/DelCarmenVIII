@@ -3,7 +3,7 @@
     grid-template-areas: 
     "cabecera cabecera cabecera cabecera cabecera cabecera cabecera"
     "lolo lolo lolo lolo lolo lolo lolo"
-    "pache santi balta balta balta fabri rusca"
+    "pache santi2 balta balta balta fabri rusca"
     "gato gato gato juan juan juan juan"
     "mussi mussi mussi mussi mussi mussi mussi"
     "crispa crispa crispa niño neyen neyen neyen"
@@ -11,6 +11,7 @@
     grid-template-columns: repeat(7,1fr);
     grid-template-rows: 1fr 3fr 3fr 3fr 3fr 3fr 1fr;
     height: 100vh;
+    
 }
 
 .lolo{

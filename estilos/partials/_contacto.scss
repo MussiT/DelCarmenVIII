@@ -17,7 +17,7 @@
                 cursor: pointer;
                 background-color: map-get($colores,colorDelca);
                 color: white;
-                transition: padding 0.5s;
+                transition: map-get($transitions, transitionContacto);
                 &:hover{
                     padding: 2px;
                 }

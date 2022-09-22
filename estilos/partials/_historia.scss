@@ -61,7 +61,7 @@
         justify-content: center;
         color: map-get($colores,colorDelca);
         background-color: white;
-        border-radius: 25px;
+        border-radius: map-get($tamanos,borderRadius);
     }
     .escudo,
     .tifa,
@@ -72,7 +72,7 @@
         justify-content: center;
         color: map-get($colores,colorDelca);
         background-color: black;
-        border-radius: 25px;
+        border-radius: map-get($tamanos,borderRadius);
     }
     .casaca{
         grid-area: casaca;
@@ -116,7 +116,7 @@
     .ligaNuñez{
         grid-area: ligaNuñez;
     }
-}
+    }
 
 @media screen and (max-width: 599px) and (orientation:portrait) {
     .grillaDeHistoria{

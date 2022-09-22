@@ -39,7 +39,7 @@ height: 100vh;
         width: 350px;
         height: 300px;
         border-radius: 05px;
-        transition: padding 0.5s;
+        transition: map-get($transitions,transitionGaleria);
         &:hover{
             padding: 6px;
         }

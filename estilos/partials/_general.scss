@@ -11,7 +11,7 @@
 
   .cabecera {
     grid-area: cabecera;
-    background-image: linear-gradient(to right, $colorDelca, black);
+    background-image: linear-gradient(to left,#1033a3, black);
     .cabecera--foto {
       display: inline-block;
       margin: 10px;
@@ -21,7 +21,7 @@
       margin-bottom: 5px;
       position: relative;
       bottom: 25px;
-      color: map-get($colores,dorado);
+      color: map-get($colores,colorDelca);
     }
     .cabecera--navegador {
       background-color: black;
@@ -39,7 +39,8 @@
     text-align: center;
     font-weight: 900;
     grid-area: pieDePagina;
-    background-image: linear-gradient(to right, $colorDelca, black);
+    background-color: black;
+    color: map-get($colores,colorDelca);
   }
   
   @font-face {

@@ -11,7 +11,7 @@
 } */
 .cabecera {
   grid-area: cabecera;
-  background-image: linear-gradient(to right, #1033a3, black);
+  background-image: linear-gradient(to left, #1033a3, black);
 }
 .cabecera .cabecera--foto {
   display: inline-block;
@@ -22,6 +22,7 @@
   margin-bottom: 5px;
   position: relative;
   bottom: 25px;
+  color: #1033a3;
 }
 .cabecera .cabecera--navegador {
   background-color: black;
@@ -39,7 +40,8 @@
   text-align: center;
   font-weight: 900;
   grid-area: pieDePagina;
-  background-image: linear-gradient(to right, #1033a3, black);
+  background-color: black;
+  color: #1033a3;
 }
 
 @font-face {
@@ -85,11 +87,6 @@
     grid-template-columns: 1fr;
     height: 100vh;
   }
-  .grillaDeInicio .santiTexto,
-.grillaDeInicio .copaTexto,
-.grillaDeInicio .neyenTexto {
-    font-size: 15px;
-  }
 }
 @media screen and (max-width: 599px) and (orientation: landscape) {
   .grillaDeInicio {
@@ -98,11 +95,6 @@
     grid-template-columns: repeat(2, 1fr);
     height: 100vh;
   }
-  .grillaDeInicio .santiTexto,
-.grillaDeInicio .copaTexto,
-.grillaDeInicio .neyenTexto {
-    font-size: 15px;
-  }
 }
 @media screen and (min-width: 600px) and (max-width: 1199px) {
   .grillaDeInicio {
@@ -110,11 +102,6 @@
     grid-template-rows: repeat(5, 1fr);
     grid-template-columns: repeat(2, 1fr);
     height: 100vh;
-  }
-  .grillaDeInicio .santiTexto,
-.grillaDeInicio .copaTexto,
-.grillaDeInicio .neyenTexto {
-    font-size: 15px;
   }
 }
 .grillaDePlantel {
@@ -191,7 +178,7 @@
   text-align: center;
   font-size: 30px;
   background-color: #1033a3;
-  color: #a1a308;
+  background-color: #c1c10b;
 }
 
 @media screen and (max-width: 599px) and (orientation: portrait) {
@@ -272,7 +259,6 @@
   justify-content: center;
   color: #1033a3;
   background-color: white;
-  border-radius: 25px;
 }
 .grillaDeHistoria .escudo,
 .grillaDeHistoria .tifa,
@@ -283,7 +269,6 @@
   justify-content: center;
   color: #1033a3;
   background-color: black;
-  border-radius: 25px;
 }
 .grillaDeHistoria .casaca {
   grid-area: casaca;

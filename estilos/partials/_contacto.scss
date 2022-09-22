@@ -15,7 +15,7 @@
             grid-area: formulario;
             .enviar{
                 cursor: pointer;
-                background-color: $colorDelca;
+                background-color: map-get($colores,colorDelca);
                 color: white;
                 transition: padding 0.5s;
                 &:hover{
@@ -23,7 +23,7 @@
                 }
             }
             .azul{
-                background-color: $colorDelca;
+                background-color: map-get($colores,colorDelca);
                 color:white
             }
             .blanco{

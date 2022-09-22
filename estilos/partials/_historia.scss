@@ -21,14 +21,14 @@
     grid-template-columns: 2fr 2fr 2fr;
     column-gap: 10px;
     row-gap: 10px;
-    background-color: $colorDelca;
+    background-color: map-get($colores,colorDelca);
     .valores--foto{
         display: inline-block;
         margin: 15px;
-        border-top: 15px solid $colorDelca;
+        border-top: 15px solid map-get($colores,colorDelca);
         border-right: 15px solid black;
         border-left:  15px solid black;
-        border-bottom: 15px solid $colorDelca;
+        border-bottom: 15px solid map-get($colores,colorDelca);
         border-radius: 05px;
         grid-area: valores;
     }
@@ -59,7 +59,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        color: $colorDelca;
+        color: map-get($colores,colorDelca);
         background-color: white;
         border-radius: 25px;
     }
@@ -70,7 +70,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        color: $colorDelca;
+        color: map-get($colores,colorDelca);
         background-color: black;
         border-radius: 25px;
     }

@@ -24,7 +24,7 @@
     .santiTexto{
         grid-area: santiTexto;
         text-align: center;
-        background-color: $colorDelca;
+        background-color: map-get($colores,colorDelca);
     }
     
     .copaTexto{
@@ -36,7 +36,7 @@
     .neyenTexto{
         grid-area: neyenTexto;
         text-align: center;
-        background-color: $colorDelca;
+        background-color: map-get($colores,colorDelca);
     }    
 }
 

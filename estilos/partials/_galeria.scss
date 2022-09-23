@@ -11,6 +11,7 @@ grid-template-areas:
 grid-template-rows: 1fr 1fr 2fr 1fr 2fr 1fr;
 grid-template-columns: repeat(3,auto);
 height: 100vh;
+background-color: map-get($colores,colorDelca);
 .titulos1{
     grid-area: titulos1;
     @extend %flexGaleria;

@@ -9,10 +9,10 @@
 
 %fotosGaleria{
     margin: 15px;
-        border-top: 10px solid #1033a3;
+        border-top: 10px solid white;
         border-right: 10px solid black;
         border-left:  10px solid black;
-        border-bottom: 10px solid #1033a3;
+        border-bottom: 10px solid white;
         width: 350px;
         height: 300px;
         border-radius: 05px;
@@ -31,6 +31,7 @@
 %textoHistoria{
     font-size: 17px;
     grid-area: textoValores;
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;

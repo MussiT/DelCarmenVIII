@@ -3,7 +3,7 @@
     grid-template-areas:
     "cabecera cabecera cabecera"
     "valor valor valor"
-    "bici bici textoBici"
+    "valores valores textoValores"
     "escudo escudo escudo"
     "textoEscudo textoEscudo viejo"
     "textoEscudo textoEscudo nuevo"
@@ -22,6 +22,8 @@
     column-gap: 10px;
     row-gap: 10px;
     background-color: map-get($colores,colorDelca);
+    
+    .textoValores,
     .textoEscudo,
     .textoCasaca,
     .textoTifa,
@@ -40,12 +42,24 @@
     .valor,
     .casaca,
     .campeones{
-      @include titulosHistoria ($colorTitulo: white);
+    //   @include titulosHistoria ($colorTitulo: white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: map-get($colores,colorDelca);
+    border-radius: map-get($tamanos,borderRadius);
+    background-color:white
     }
     .escudo,
     .tifa,
     .ligaNuñez{
-        @include titulosHistoria ($colorTitulo: black);
+        // @include titulosHistoria ($colorTitulo: black);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: map-get($colores,colorDelca);
+        border-radius: map-get($tamanos,borderRadius);
+        background-color:black
     }
     .casaca{
         grid-area: casaca;
@@ -95,11 +109,14 @@
     .escudo{
         grid-area: escudo;
     }
-    .bici{
-        grid-area: bici;
+    .valores{
+        grid-area: valores;
     }
-    .textoBici{
-        grid-area: textoBici;
+    .textoValores{
+        grid-area: textoValores;
+    }
+    .valor{
+        grid-area: valor;
     }
     }
 

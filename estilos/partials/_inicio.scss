@@ -2,27 +2,48 @@
     display: grid;
     grid-template-areas: 
     "cabecera cabecera cabecera"
-    "somos somos somosTexto"
+    "tittle tittle tittle"
+    "benditos benditos benditos"
+    "novedades novedades novedades"
     "santi copa neyen"
     "santiTexto copaTexto neyenTexto"
     "pieDePagina pieDePagina pieDePagina"
     ;
-    grid-template-rows: 1fr 3fr 3fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr 2fr 2fr 1fr;
     grid-template-columns: 2fr 2fr 2fr;
     height: 100vh;
+    background-color: map-get($colores,colorDelca);
 
-    .somos--foto{
-        margin: 15px;
-        border-top: 15px solid #1033a3;
-        border-right: 15px solid black;
-        border-left:  15px solid black;
-        border-bottom: 15px solid #1033a3;
-        border-radius: 05px;
-        grid-area: somos;
+    .tittle{
+        grid-area: tittle;
+        display: flex;
+        margin: 20px;
+        align-items: center;
+        justify-content: center;
+        color: map-get($colores,colorDelca);
+        border-radius: map-get($tamanos,borderRadius);
+        background-color:black
     }
-    .somos--texto{
-        grid-area: somosTexto;
 
+    .novedades{
+        grid-area: novedades;
+        display: flex;
+        margin: 10px;
+        align-items: center;
+        justify-content: center;
+        color: map-get($colores,colorDelca);
+        border-radius: map-get($tamanos,borderRadius);
+        background-color:black
+    }
+
+    .benditos{
+        grid-area: benditos;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+        margin: 20px;
+        background-color: map-get($colores,colorDelca);
     }
     .santi{
         grid-area: santi;
@@ -54,6 +75,7 @@
         background-color: map-get($colores,colorDelca);
     }    
 }
+
 
 
 

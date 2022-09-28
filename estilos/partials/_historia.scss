@@ -42,24 +42,12 @@
     .valor,
     .casaca,
     .campeones{
-    //   @include titulosHistoria ($colorTitulo: white);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: map-get($colores,colorDelca);
-    border-radius: map-get($tamanos,borderRadius);
-    background-color:white
+     @include titulosHistoria (white);
     }
     .escudo,
     .tifa,
     .ligaNuñez{
-        // @include titulosHistoria ($colorTitulo: black);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: map-get($colores,colorDelca);
-        border-radius: map-get($tamanos,borderRadius);
-        background-color:black
+      @include titulosHistoria (black);
     }
     .casaca{
         grid-area: casaca;

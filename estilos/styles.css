@@ -498,4 +498,16 @@
 }
 .grillaDeFormulario .fondo--formulario .formulario .blanco {
   color: white;
+}
+.grillaDeFormulario .fondo--formulario::before {
+  content: "";
+  width: 100%;
+  height: 70%;
+  background-color: black;
+  position: absolute;
+  opacity: 0.6;
+}
+.grillaDeFormulario .formulario,
+.grillaDeFormulario .pieDePagina {
+  position: relative;
 }/*# sourceMappingURL=styles.css.map */

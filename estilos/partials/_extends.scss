@@ -13,19 +13,13 @@
         border-right: 10px solid black;
         border-left:  10px solid black;
         border-bottom: 10px solid white;
-        width: 350px;
-        height: 300px;
-        border-radius: 05px;
-        transition: padding 0.5s;
+        width: 370px;
+        height: 325px;
+        border-radius: 06px;
+        transition: padding 0.8s;
         &:hover{
-            padding: 6px;
+            padding: 5px;
         }
-}
-
-%flexGaleria{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
 %textoHistoria{

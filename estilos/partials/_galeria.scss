@@ -2,65 +2,286 @@
 display: grid;
 grid-template-areas:
  "cabecera cabecera cabecera"
- "titulos1 titulos1 titulos1"
- "fotos1 fotos1 fotos1 "
- "titulos2 titulos2 titulos2"
- "fotos2 fotos2 fotos2"
+ "titulouno titulodos titulotres"
+ "fotouno fotodos fototres"
+ "titulocuatro titulocinco tituloseis"
+ "fotocuatro fotocinco fotoseis"
+ "titulosiete tituloocho titulonueve"
+ "fotosiete fotoocho fotonueve"
+ "titulodiez tituloonce titulodoce"
+ "fotodiez fotoonce fotodoce"
+ "titulotrece titulocatorce tituloquince"
+ "fototrece fotocatorce fotoquince"
+ "titulodieciseis titulodiecisiete titulodieciocho"
+ "fotodieciseis fotodiecisiete fotodieciocho"
+ "titulodiecinueve tituloveinte tituloveintiuno"
+ "fotodiecinueve fotoveinte fotoveintiuno"
+ "tituloveintidos tituloveintitres tituloveinticuatro"
+ "fotoveintidos fotoveintitres fotoveinticuatro"
  "pieDePagina pieDePagina pieDePagina"
 ;
-grid-template-rows: 1fr 1fr 2fr 1fr 2fr 1fr;
+grid-template-rows: 1fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr;
 grid-template-columns: repeat(3,auto);
 height: 100vh;
-background-color: map-get($colores,colorDelca);
-.titulos1{
-    grid-area: titulos1;
-    @extend %flexGaleria;
+
+    .titulouno{
+     grid-area: titulouno;
+            }
+    .titulodos{
+     grid-area: titulodos;
+            }
+    .titulotres{
+    grid-area: titulotres;
+            }
+
+
+    .fotouno{
+        grid-area: fotouno;
+    }
+    .fotodos{
+        grid-area: fotodos;
+    }
+    .fototres{
+        grid-area: fototres;
+    }
+
+
+    .titulocuatro{
+        grid-area: titulocuatro;
+               }
+       .titulocinco{
+        grid-area: titulocinco;
+               }
+       .tituloseis{
+       grid-area: tituloseis;
+               }
+
+
+
+    .fotocuatro{
+        grid-area: fotocuatro;
+    }
+    .fotocinco{
+        grid-area: fotocinco;
+    }
+    .fotoseis{
+        grid-area: fotoseis;
+    }
+
+
+
+    .titulosiete{
+        grid-area: titulosiete;
+    }
+    
+    .tituloocho{
+        grid-area: tituloocho;
+    }
+     
+    .titulonueve{
+        grid-area: titulonueve;
+    }
+
+
+
+    .fotosiete{
+        grid-area: fotosiete;
+    }
+    .fotoocho{
+        grid-area: fotoocho;
+    }
+    .fotonueve{
+        grid-area: fotonueve;
+    }
+    
+    
+    .titulodiez{
+        grid-area: titulodiez;
+    }
+    
+    .tituloonce{
+        grid-area: tituloonce;
+    }
+     
+    .titulodoce{
+        grid-area: titulodoce;
+    }
+
+
+    
+    .fotodiez{
+        grid-area: fotodiez;
+    }
+    .fotoonce{
+        grid-area: fotoonce;
+    }
+    .fotodoce{
+        grid-area: fotodoce;
+    }
+
+
+
+     
+    .titulotrece{
+        grid-area: titulotrece;
+    }
+    
+    .titulocatorce{
+        grid-area: titulocatorce;
+    }
+     
+    .tituloquince{
+        grid-area: tituloquince;
+    }
+
+
+    .fototrece{
+        grid-area: fototrece;
+    }
+    .fotocatorce{
+        grid-area: fotocatorce;
+    }
+    .fotoquince{
+        grid-area: fotoquince;
+    }
+
+
+       
+    .titulodieciseis{
+        grid-area: titulodieciseis;
+    }
+    
+    .titulodiecisiete{
+        grid-area: titulodiecisiete;
+    }
+     
+    .titulodieciocho{
+        grid-area: titulodieciocho;
+    }
+
+    .fotodieciseis{
+        grid-area: fotodieciseis;
+    }
+    .fotodiecisiete{
+        grid-area: fotodiecisiete;
+    }
+    .fotodieciocho{
+        grid-area: fotodieciocho;
+    }
+
+    
+         
+    .titulodiecinueve{
+        grid-area: titulodiecinueve;
+    }
+    
+    .tituloveinte{
+        grid-area: tituloveinte;
+    }
+     
+    .tituloveintiuno{
+        grid-area: tituloveintiuno;
+    }
+
+    .fotodiecinueve{
+        grid-area: fotodiecinueve;
+    }
+    .fotoveinte{
+        grid-area: fotoveinte;
+    }
+    .fotoveintiuno{
+        grid-area: fotoveintiuno;
+    }
+
+    .tituloveintidos{
+        grid-area: tituloveintidos;
+    }
+    
+    .tituloveintitres{
+        grid-area: tituloveintitres;
+    }
+     
+    .tituloveinticuatro{
+        grid-area: tituloveinticuatro;
+    }
+
+    .fotoveintidos{
+        grid-area: fotoveintidos;
+    }
+    .fotoveintitres{
+        grid-area: fotoveintitres;
+    }
+    .fotoveinticuatro{
+        grid-area: fotoveinticuatro;
+    }
+
+
+
+    
     .titulos--galeria{
-       @extend %titulosGaleria;
-        }
-}
-.fotos1{
-    grid-area: fotos1;
-    @extend %flexGaleria;
+        @extend %titulosGaleria;
+      }
     .fotos--galeria{
         @extend %fotosGaleria;
-    }
-}
-.titulos2{
-    grid-area: titulos2;
-    @extend %flexGaleria;
-    .titulos--galeria{
-      @extend %titulosGaleria;
-    }
-}
-.fotos2{
-    grid-area: fotos2;
-    @extend %flexGaleria;
-    .fotos--galeria{
-       @extend %fotosGaleria;
-    }
-}
+     }
+     background-color: map-get($colores,colorDelca);
 }
 
 @media screen and (max-width: 599px) and (orientation:portrait) {
 .grillaDeGaleria{
     grid-template-areas:
      "cabecera"
-     "titulos1" 
-     "fotos1"
-     "titulos1"
-     "fotos1"
-     "titulos1"
-     "fotos1"
-     "titulos2"
-     "fotos2" 
-     "titulos2"
-     "fotos2"
-     "titulos2"
-     "fotos2"
+     "titulouno" 
+     "fotouno"
+     "titulodos"
+     "fotodos"
+     "titulotres"
+     "fototres"
+     "titulocuatro"
+     "fotocuatro" 
+     "titulocinco"
+     "fotocinco"
+     "tituloseis"
+     "fotoseis"
+     "titulosiete" 
+     "fotosiete"
+     "tituloocho"
+     "fotoocho"
+     "titulonueve"
+     "fotonueve"
+     "titulodiez"
+     "fotodiez" 
+     "tituloonce"
+     "fotoonce"
+     "titulodoce"
+     "fotodoce"
+     "titulotrece"
+     "fototrece"
+     "titulocatorce"
+     "fotocatorce"
+     "tituloquince"
+     "fotoquince"
+     "titulodieciseis"
+     "fotodieciseis"
+     "titulodiecisiete"
+     "fotodiecisiete"
+     "titulodieciocho"
+     "fotodieciocho"
+     "titulodiecinueve"
+     "fotodiecinueve"
+     "tituloveinte"
+     "fotoveinte"
+     "tituloveintiuno"
+     "fotoveintiuno"
+     "tituloveintidos"
+     "fotoveintidos"
+     "tituloveintitres"
+     "fotoveintitres"
+     "tituloveinticuatro"
+     "fotoveinticuatro"
      "pieDePagina"
     ;
-    grid-template-rows: repeat(14, 1fr);
+    grid-template-rows: repeat(50, 1fr);
     grid-template-columns: 1fr;
     height: 100vh;
     }
@@ -69,36 +290,71 @@ background-color: map-get($colores,colorDelca);
 @media screen and (max-width: 599px) and (orientation:landscape) {
     .grillaDeGaleria{
         grid-template-areas:
-         "cabecera cabecera"
-         "titulos1 titulos1" 
-         "fotos1 fotos1"
-         "titulos1 titulos2"
-         "fotos1 fotos2"
-         "titulos2 titulos2"
-         "fotos2 fotos2"
-         "pieDePagina pieDePagina"
-        ;
-        grid-template-rows: repeat(8, 1fr);
+     "cabecera cabecera"
+     "titulouno titulodos" 
+     "fotouno fotodos"
+     "titulotres titulocuatro"
+     "fototres fotocuatro"
+     "titulocinco tituloseis"
+     "fotocinco fotoseis"
+     "titulosiete tituloocho" 
+     "fotosiete fotoocho"
+     "titulonueve titulodiez"
+     "fotonueve fotodiez"
+     "tituloonce titulodoce"
+     "fotoonce fotodoce"
+     "titulotrece titulocatorce"
+     "fototrece fotocatorce"
+     "tituloquince titulodieciseis"
+     "fotoquince fotodieciseis"
+     "titulodiecisiete titulodieciocho"
+     "fotodiecisiete fotodieciocho"
+     "titulodiecinueve tituloveinte"
+     "fotodiecinueve fotoveinte"
+     "tituloveintiuno tituloveintidos"
+     "fotoveintiuno fotoveintidos"
+     "tituloveintitres tituloveinticuatro"
+     "fotoveintitres fotoveinticuatro"
+     "pieDePagina pieDePagina"
+    ;
+        grid-template-rows: repeat(26, 1fr);
         grid-template-columns:repeat(2,1fr);
         height: 100vh;
         }
         }
 
 @media screen and (min-width:600px) and (max-width:1199px){
-    
-.grillaDeGaleria{
-grid-template-areas:
-"cabecera cabecera"
-"titulos1 titulos1" 
-"fotos1 fotos1"
-"titulos1 titulos2"
-"fotos1 fotos2"
-"titulos2 titulos2"
-"fotos2 fotos2"
-"pieDePagina pieDePagina"
-;
-grid-template-rows: repeat(8, 1fr);
-grid-template-columns:repeat(2,1fr);
-height: 100vh;
+    .grillaDeGaleria{
+        grid-template-areas:
+     "cabecera cabecera"
+     "titulouno titulodos" 
+     "fotouno fotodos"
+     "titulotres titulocuatro"
+     "fototres fotocuatro"
+     "titulocinco tituloseis"
+     "fotocinco fotoseis"
+     "titulosiete tituloocho" 
+     "fotosiete fotoocho"
+     "titulonueve titulodiez"
+     "fotonueve fotodiez"
+     "tituloonce titulodoce"
+     "fotoonce fotodoce"
+     "titulotrece titulocatorce"
+     "fototrece fotocatorce"
+     "tituloquince titulodieciseis"
+     "fotoquince fotodieciseis"
+     "titulodiecisiete titulodieciocho"
+     "fotodiecisiete fotodieciocho"
+     "titulodiecinueve tituloveinte"
+     "fotodiecinueve fotoveinte"
+     "tituloveintiuno tituloveintidos"
+     "fotoveintiuno fotoveintidos"
+     "tituloveintitres tituloveinticuatro"
+     "fotoveintitres fotoveinticuatro"
+     "pieDePagina pieDePagina"
+    ;
+    grid-template-rows: repeat(20, 1fr);
+    grid-template-columns:repeat(2,1fr);
+    height: 100vh;
 }
 }

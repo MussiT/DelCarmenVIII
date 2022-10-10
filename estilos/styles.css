@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.grillaDeGaleria .titulos2 .titulos--galeria, .grillaDeGaleria .titulos1 .titulos--galeria {
+.grillaDeGaleria .titulos--galeria {
   margin: 10px;
   padding: 5px;
   background-color: black;
@@ -8,25 +8,19 @@
   text-align: center;
 }
 
-.grillaDeGaleria .fotos2 .fotos--galeria, .grillaDeGaleria .fotos1 .fotos--galeria {
+.grillaDeGaleria .fotos--galeria {
   margin: 15px;
   border-top: 10px solid white;
   border-right: 10px solid black;
   border-left: 10px solid black;
   border-bottom: 10px solid white;
-  width: 350px;
-  height: 300px;
-  border-radius: 5px;
-  transition: padding 0.5s;
+  width: 370px;
+  height: 325px;
+  border-radius: 6px;
+  transition: padding 0.8s;
 }
-.grillaDeGaleria .fotos2 .fotos--galeria:hover, .grillaDeGaleria .fotos1 .fotos--galeria:hover {
-  padding: 6px;
-}
-
-.grillaDeGaleria .fotos2, .grillaDeGaleria .titulos2, .grillaDeGaleria .fotos1, .grillaDeGaleria .titulos1 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.grillaDeGaleria .fotos--galeria:hover {
+  padding: 5px;
 }
 
 .grillaDeHistoria .textoValores,
@@ -426,44 +420,176 @@
 }
 .grillaDeGaleria {
   display: grid;
-  grid-template-areas: "cabecera cabecera cabecera" "titulos1 titulos1 titulos1" "fotos1 fotos1 fotos1 " "titulos2 titulos2 titulos2" "fotos2 fotos2 fotos2" "pieDePagina pieDePagina pieDePagina";
-  grid-template-rows: 1fr 1fr 2fr 1fr 2fr 1fr;
+  grid-template-areas: "cabecera cabecera cabecera" "titulouno titulodos titulotres" "fotouno fotodos fototres" "titulocuatro titulocinco tituloseis" "fotocuatro fotocinco fotoseis" "titulosiete tituloocho titulonueve" "fotosiete fotoocho fotonueve" "titulodiez tituloonce titulodoce" "fotodiez fotoonce fotodoce" "titulotrece titulocatorce tituloquince" "fototrece fotocatorce fotoquince" "titulodieciseis titulodiecisiete titulodieciocho" "fotodieciseis fotodiecisiete fotodieciocho" "titulodiecinueve tituloveinte tituloveintiuno" "fotodiecinueve fotoveinte fotoveintiuno" "tituloveintidos tituloveintitres tituloveinticuatro" "fotoveintidos fotoveintitres fotoveinticuatro" "pieDePagina pieDePagina pieDePagina";
+  grid-template-rows: 1fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr;
   grid-template-columns: repeat(3, auto);
   height: 100vh;
   background-color: #1033a3;
 }
-.grillaDeGaleria .titulos1 {
-  grid-area: titulos1;
+.grillaDeGaleria .titulouno {
+  grid-area: titulouno;
 }
-.grillaDeGaleria .fotos1 {
-  grid-area: fotos1;
+.grillaDeGaleria .titulodos {
+  grid-area: titulodos;
 }
-.grillaDeGaleria .titulos2 {
-  grid-area: titulos2;
+.grillaDeGaleria .titulotres {
+  grid-area: titulotres;
 }
-.grillaDeGaleria .fotos2 {
-  grid-area: fotos2;
+.grillaDeGaleria .fotouno {
+  grid-area: fotouno;
+}
+.grillaDeGaleria .fotodos {
+  grid-area: fotodos;
+}
+.grillaDeGaleria .fototres {
+  grid-area: fototres;
+}
+.grillaDeGaleria .titulocuatro {
+  grid-area: titulocuatro;
+}
+.grillaDeGaleria .titulocinco {
+  grid-area: titulocinco;
+}
+.grillaDeGaleria .tituloseis {
+  grid-area: tituloseis;
+}
+.grillaDeGaleria .fotocuatro {
+  grid-area: fotocuatro;
+}
+.grillaDeGaleria .fotocinco {
+  grid-area: fotocinco;
+}
+.grillaDeGaleria .fotoseis {
+  grid-area: fotoseis;
+}
+.grillaDeGaleria .titulosiete {
+  grid-area: titulosiete;
+}
+.grillaDeGaleria .tituloocho {
+  grid-area: tituloocho;
+}
+.grillaDeGaleria .titulonueve {
+  grid-area: titulonueve;
+}
+.grillaDeGaleria .fotosiete {
+  grid-area: fotosiete;
+}
+.grillaDeGaleria .fotoocho {
+  grid-area: fotoocho;
+}
+.grillaDeGaleria .fotonueve {
+  grid-area: fotonueve;
+}
+.grillaDeGaleria .titulodiez {
+  grid-area: titulodiez;
+}
+.grillaDeGaleria .tituloonce {
+  grid-area: tituloonce;
+}
+.grillaDeGaleria .titulodoce {
+  grid-area: titulodoce;
+}
+.grillaDeGaleria .fotodiez {
+  grid-area: fotodiez;
+}
+.grillaDeGaleria .fotoonce {
+  grid-area: fotoonce;
+}
+.grillaDeGaleria .fotodoce {
+  grid-area: fotodoce;
+}
+.grillaDeGaleria .titulotrece {
+  grid-area: titulotrece;
+}
+.grillaDeGaleria .titulocatorce {
+  grid-area: titulocatorce;
+}
+.grillaDeGaleria .tituloquince {
+  grid-area: tituloquince;
+}
+.grillaDeGaleria .fototrece {
+  grid-area: fototrece;
+}
+.grillaDeGaleria .fotocatorce {
+  grid-area: fotocatorce;
+}
+.grillaDeGaleria .fotoquince {
+  grid-area: fotoquince;
+}
+.grillaDeGaleria .titulodieciseis {
+  grid-area: titulodieciseis;
+}
+.grillaDeGaleria .titulodiecisiete {
+  grid-area: titulodiecisiete;
+}
+.grillaDeGaleria .titulodieciocho {
+  grid-area: titulodieciocho;
+}
+.grillaDeGaleria .fotodieciseis {
+  grid-area: fotodieciseis;
+}
+.grillaDeGaleria .fotodiecisiete {
+  grid-area: fotodiecisiete;
+}
+.grillaDeGaleria .fotodieciocho {
+  grid-area: fotodieciocho;
+}
+.grillaDeGaleria .titulodiecinueve {
+  grid-area: titulodiecinueve;
+}
+.grillaDeGaleria .tituloveinte {
+  grid-area: tituloveinte;
+}
+.grillaDeGaleria .tituloveintiuno {
+  grid-area: tituloveintiuno;
+}
+.grillaDeGaleria .fotodiecinueve {
+  grid-area: fotodiecinueve;
+}
+.grillaDeGaleria .fotoveinte {
+  grid-area: fotoveinte;
+}
+.grillaDeGaleria .fotoveintiuno {
+  grid-area: fotoveintiuno;
+}
+.grillaDeGaleria .tituloveintidos {
+  grid-area: tituloveintidos;
+}
+.grillaDeGaleria .tituloveintitres {
+  grid-area: tituloveintitres;
+}
+.grillaDeGaleria .tituloveinticuatro {
+  grid-area: tituloveinticuatro;
+}
+.grillaDeGaleria .fotoveintidos {
+  grid-area: fotoveintidos;
+}
+.grillaDeGaleria .fotoveintitres {
+  grid-area: fotoveintitres;
+}
+.grillaDeGaleria .fotoveinticuatro {
+  grid-area: fotoveinticuatro;
 }
 @media screen and (max-width: 599px) and (orientation: portrait) {
   .grillaDeGaleria {
-    grid-template-areas: "cabecera" "titulos1" "fotos1" "titulos1" "fotos1" "titulos1" "fotos1" "titulos2" "fotos2" "titulos2" "fotos2" "titulos2" "fotos2" "pieDePagina";
-    grid-template-rows: repeat(14, 1fr);
+    grid-template-areas: "cabecera" "titulouno" "fotouno" "titulodos" "fotodos" "titulotres" "fototres" "titulocuatro" "fotocuatro" "titulocinco" "fotocinco" "tituloseis" "fotoseis" "titulosiete" "fotosiete" "tituloocho" "fotoocho" "titulonueve" "fotonueve" "titulodiez" "fotodiez" "tituloonce" "fotoonce" "titulodoce" "fotodoce" "titulotrece" "fototrece" "titulocatorce" "fotocatorce" "tituloquince" "fotoquince" "titulodieciseis" "fotodieciseis" "titulodiecisiete" "fotodiecisiete" "titulodieciocho" "fotodieciocho" "titulodiecinueve" "fotodiecinueve" "tituloveinte" "fotoveinte" "tituloveintiuno" "fotoveintiuno" "tituloveintidos" "fotoveintidos" "tituloveintitres" "fotoveintitres" "tituloveinticuatro" "fotoveinticuatro" "pieDePagina";
+    grid-template-rows: repeat(50, 1fr);
     grid-template-columns: 1fr;
     height: 100vh;
   }
 }
 @media screen and (max-width: 599px) and (orientation: landscape) {
   .grillaDeGaleria {
-    grid-template-areas: "cabecera cabecera" "titulos1 titulos1" "fotos1 fotos1" "titulos1 titulos2" "fotos1 fotos2" "titulos2 titulos2" "fotos2 fotos2" "pieDePagina pieDePagina";
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: "cabecera cabecera" "titulouno titulodos" "fotouno fotodos" "titulotres titulocuatro" "fototres fotocuatro" "titulocinco tituloseis" "fotocinco fotoseis" "titulosiete tituloocho" "fotosiete fotoocho" "titulonueve titulodiez" "fotonueve fotodiez" "tituloonce titulodoce" "fotoonce fotodoce" "titulotrece titulocatorce" "fototrece fotocatorce" "tituloquince titulodieciseis" "fotoquince fotodieciseis" "titulodiecisiete titulodieciocho" "fotodiecisiete fotodieciocho" "titulodiecinueve tituloveinte" "fotodiecinueve fotoveinte" "tituloveintiuno tituloveintidos" "fotoveintiuno fotoveintidos" "tituloveintitres tituloveinticuatro" "fotoveintitres fotoveinticuatro" "pieDePagina pieDePagina";
+    grid-template-rows: repeat(26, 1fr);
     grid-template-columns: repeat(2, 1fr);
     height: 100vh;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 1199px) {
   .grillaDeGaleria {
-    grid-template-areas: "cabecera cabecera" "titulos1 titulos1" "fotos1 fotos1" "titulos1 titulos2" "fotos1 fotos2" "titulos2 titulos2" "fotos2 fotos2" "pieDePagina pieDePagina";
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: "cabecera cabecera" "titulouno titulodos" "fotouno fotodos" "titulotres titulocuatro" "fototres fotocuatro" "titulocinco tituloseis" "fotocinco fotoseis" "titulosiete tituloocho" "fotosiete fotoocho" "titulonueve titulodiez" "fotonueve fotodiez" "tituloonce titulodoce" "fotoonce fotodoce" "titulotrece titulocatorce" "fototrece fotocatorce" "tituloquince titulodieciseis" "fotoquince fotodieciseis" "titulodiecisiete titulodieciocho" "fotodiecisiete fotodieciocho" "titulodiecinueve tituloveinte" "fotodiecinueve fotoveinte" "tituloveintiuno tituloveintidos" "fotoveintiuno fotoveintidos" "tituloveintitres tituloveinticuatro" "fotoveintitres fotoveinticuatro" "pieDePagina pieDePagina";
+    grid-template-rows: repeat(20, 1fr);
     grid-template-columns: repeat(2, 1fr);
     height: 100vh;
   }

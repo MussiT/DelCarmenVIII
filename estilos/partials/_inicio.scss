@@ -84,6 +84,9 @@
     .grillaDeInicio{
         grid-template-areas: 
         "cabecera"
+        "tittle" 
+        "benditos" 
+        "novedades"
         "santi"
         "santiTexto"
         "copa"
@@ -92,7 +95,7 @@
         "neyenTexto"
         "pieDePagina"
         ;
-        grid-template-rows: repeat(8, 1fr);
+        grid-template-rows: repeat(11, 1fr);
         grid-template-columns: 1fr;
         height: 100vh;
         .santiTexto,
@@ -107,12 +110,15 @@
     .grillaDeInicio{
         grid-template-areas: 
         "cabecera cabecera"
+        "tittle tittle"
+        "benditos benditos"
+        "novedades novedades"
         "santi copa"
         "santiTexto copaTexto"
         "neyen neyenTexto" 
         "pieDePagina pieDePagina"
         ;
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-rows: repeat(8, 1fr);
         grid-template-columns: repeat(2,1fr);
         height: 100vh;
         .santiTexto,
@@ -127,12 +133,15 @@
         .grillaDeInicio{
             grid-template-areas: 
             "cabecera cabecera"
+            "tittle tittle"
+            "benditos benditos"
+            "novedades novedades"
             "santi copa"
             "santiTexto copaTexto"
             "neyen neyenTexto" 
             "pieDePagina pieDePagina"
             ;
-            grid-template-rows: repeat(5, 1fr);
+            grid-template-rows: repeat(8, 1fr);
             grid-template-columns: repeat(2,1fr);
             height: 100vh;    
         .santiTexto,

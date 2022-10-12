@@ -149,8 +149,8 @@
 
 @media screen and (max-width: 599px) and (orientation: portrait) {
   .grillaDeInicio {
-    grid-template-areas: "cabecera" "santi" "santiTexto" "copa" "copaTexto" "neyen" "neyenTexto" "pieDePagina";
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: "cabecera" "tittle" "benditos" "novedades" "santi" "santiTexto" "copa" "copaTexto" "neyen" "neyenTexto" "pieDePagina";
+    grid-template-rows: repeat(11, 1fr);
     grid-template-columns: 1fr;
     height: 100vh;
   }
@@ -162,8 +162,8 @@
 }
 @media screen and (max-width: 599px) and (orientation: landscape) {
   .grillaDeInicio {
-    grid-template-areas: "cabecera cabecera" "santi copa" "santiTexto copaTexto" "neyen neyenTexto" "pieDePagina pieDePagina";
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "cabecera cabecera" "tittle tittle" "benditos benditos" "novedades novedades" "santi copa" "santiTexto copaTexto" "neyen neyenTexto" "pieDePagina pieDePagina";
+    grid-template-rows: repeat(8, 1fr);
     grid-template-columns: repeat(2, 1fr);
     height: 100vh;
   }
@@ -175,8 +175,8 @@
 }
 @media screen and (min-width: 600px) and (max-width: 1199px) {
   .grillaDeInicio {
-    grid-template-areas: "cabecera cabecera" "santi copa" "santiTexto copaTexto" "neyen neyenTexto" "pieDePagina pieDePagina";
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "cabecera cabecera" "tittle tittle" "benditos benditos" "novedades novedades" "santi copa" "santiTexto copaTexto" "neyen neyenTexto" "pieDePagina pieDePagina";
+    grid-template-rows: repeat(8, 1fr);
     grid-template-columns: repeat(2, 1fr);
     height: 100vh;
   }

@@ -112,6 +112,7 @@
   color: #1033a3;
   border-radius: 25px;
   background-color: black;
+  color: white;
 }
 .grillaDeInicio .benditos {
   grid-area: benditos;
@@ -135,6 +136,7 @@
   grid-area: santiTexto;
   text-align: center;
   background-color: #1033a3;
+  color: white;
 }
 .grillaDeInicio .copaTexto {
   grid-area: copaTexto;
@@ -145,6 +147,13 @@
   grid-area: neyenTexto;
   text-align: center;
   background-color: #1033a3;
+  color: white;
+}
+.grillaDeInicio .grande {
+  transition: padding 0.5s;
+}
+.grillaDeInicio .grande:hover {
+  padding: 5px;
 }
 
 @media screen and (max-width: 599px) and (orientation: portrait) {

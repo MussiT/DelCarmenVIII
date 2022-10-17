@@ -16,19 +16,30 @@
     "campeonesFoto1 campeonesFoto1 campeonesTexto"
     "campeonesFoto2 campeonesFoto2 campeonesTexto"
     "ligaNuñez ligaNuñez ligaNuñez"
+    "ligaTexto Liga1 Liga2"
+    "ligaTexto Liga1 Liga2"
+    "primera primera primera"
+    "primera1 primeraTexto primera2"
+    "primera3 primeraTexto primera4"
     "pieDePagina pieDePagina pieDePagina";
-    grid-template-rows: 138px 100px 600px 100px 300px 300px 100px 600px 100px 300px 300px 100px 300px 300px 100px 138px;
+    grid-template-rows: 1fr 2fr 4fr 2fr 3fr 3fr 2fr 4fr 2fr 3fr 3fr 2fr 3fr 3fr 2fr 3fr 3fr 2fr 3fr 3fr 1fr;
     grid-template-columns: 2fr 2fr 2fr;
     column-gap: 10px;
     row-gap: 10px;
     background-color: map-get($colores,colorDelca);
+    height: 100vh;
     
     .textoValores,
     .textoEscudo,
     .textoCasaca,
     .textoTifa,
-    .campeonesTexto{
+    .campeonesTexto,
+    .ligaTexto,
+    .primeraTexto{
        @extend %textoHistoria;
+    }
+    .textoValores{
+        grid-area: textoValores;
     }
     .escudo--viejo{
     grid-area: viejo;
@@ -39,9 +50,16 @@
     .textoEscudo{
         grid-area: textoEscudo;
     }
+    .ligaTexto{
+        grid-area: ligaTexto;
+    }
+    .primeraTexto{
+        grid-area: primeraTexto;
+    }
     .valor,
     .casaca,
-    .campeones{
+    .campeones,
+    .primera{
      @include titulosHistoria (white);
     }
     .escudo,
@@ -106,6 +124,24 @@
     .valor{
         grid-area: valor;
     }
+    .Liga1{
+        grid-area: Liga1;
+    }
+    .Liga2{
+        grid-area: Liga2;
+    }
+    .primera1{
+        grid-area: primera1;
+    }
+    .primera2{
+        grid-area: primera2;
+    }
+    .primera3{
+        grid-area: primera3;
+    }
+    .primera4{
+        grid-area: primera4;
+    }
     }
 
 @media screen and (max-width: 599px) and (orientation:portrait) {
@@ -133,11 +169,21 @@
         "campeonesTexto"
         "campeonesFoto2"
         "ligaNuñez"
+        "Liga1"
+        "ligaTexto"
+        "Liga2"
+        "primera"
+        "primera1"
+        "primera2"
+        "primeraTexto"
+        "primera3"
+        "primera4"
         "pieDePagina";
-        grid-template-rows: 138px 100px 300px 300px 100px 300px 300px 400px 100px 300px 500px 100px 250px 250px 200px 250px 250px 100px 200px 500px 200px 100px 138px;
+        grid-template-rows: 1fr 2fr 3fr 3fr 2fr 2fr 2fr 3fr 2fr 3fr 3fr 2fr 3fr 3fr 3fr 3fr 3fr 2fr 3fr 3fr 3fr 2fr 3fr 3fr 3fr 2fr 3fr 3fr 3fr 3fr 1fr;
         grid-template-columns: 1fr;
         column-gap: 10px;
         row-gap: 10px;
+        height: 100vh;
     }
     }
 
@@ -160,11 +206,18 @@
         "campeonesFoto1 campeonesTexto"
         "campeonesFoto2 campeonesTexto"
         "ligaNuñez ligaNuñez"
+        "ligaTexto ligaTexto"
+        "Liga1 Liga2"
+        "primera primera"
+        "primera1 primera2"
+        "primeraTexto primeraTexto"
+        "primera3 primera4"
         "pieDePagina pieDePagina";
-        grid-template-rows: 138px 100px 600px 100px 300px 300px 100px 600px 100px 300px 300px 300px 100px 300px 320px 100px 138px;
+        grid-template-rows: 1fr 2fr 4fr 2fr 3fr 3fr 2fr 4fr 2fr 3fr 3fr 3fr 2fr 3fr 3fr 2fr 3fr 3fr 2fr 3fr 3fr 3fr 1fr;
         grid-template-columns: repeat(2,1fr);
         column-gap: 10px;
         row-gap: 10px;
+        height: 100vh;
         }
 }
 
@@ -187,8 +240,14 @@
     "campeonesFoto1 campeonesTexto"
     "campeonesFoto2 campeonesTexto"
     "ligaNuñez ligaNuñez"
+    "ligaTexto ligaTexto"
+    "Liga1 Liga2"
+    "primera primera"
+    "primera1 primera2"
+    "primeraTexto primeraTexto"
+    "primera3 primera4"
     "pieDePagina pieDePagina";
-    grid-template-rows: 138px 100px 600px 100px 300px 300px 100px 600px 100px 300px 300px 300px 100px 300px 320px 100px 138px;
+    grid-template-rows: 1fr 2fr 4fr 2fr 3fr 3fr 2fr 4fr 2fr 3fr 3fr 3fr 2fr 4fr 4fr 2fr 3fr 3fr 2fr 3fr 3fr 3fr 1fr;
     grid-template-columns: repeat(2,1fr);
     column-gap: 10px;
     row-gap: 10px;

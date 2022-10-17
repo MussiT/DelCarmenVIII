@@ -27,9 +27,10 @@
 .grillaDeHistoria .textoEscudo,
 .grillaDeHistoria .textoCasaca,
 .grillaDeHistoria .textoTifa,
-.grillaDeHistoria .campeonesTexto {
+.grillaDeHistoria .campeonesTexto,
+.grillaDeHistoria .ligaTexto,
+.grillaDeHistoria .primeraTexto {
   font-size: 17px;
-  grid-area: textoValores;
   text-align: center;
   display: flex;
   align-items: center;
@@ -293,13 +294,17 @@
 }
 .grillaDeHistoria {
   display: grid;
-  grid-template-areas: "cabecera cabecera cabecera" "valor valor valor" "valores valores textoValores" "escudo escudo escudo" "textoEscudo textoEscudo viejo" "textoEscudo textoEscudo nuevo" "casaca casaca casaca" "camisetaFoto camisetaFoto textoCasaca" "tifa tifa tifa" "fotoTifa1 textoTifa fotoTifa2" "fotoTifa3 textoTifa fotoTifa4" "campeones campeones campeones" "campeonesFoto1 campeonesFoto1 campeonesTexto" "campeonesFoto2 campeonesFoto2 campeonesTexto" "ligaNuñez ligaNuñez ligaNuñez" "pieDePagina pieDePagina pieDePagina";
-  grid-template-rows: 138px 100px 600px 100px 300px 300px 100px 600px 100px 300px 300px 100px 300px 300px 100px 138px;
+  grid-template-areas: "cabecera cabecera cabecera" "valor valor valor" "valores valores textoValores" "escudo escudo escudo" "textoEscudo textoEscudo viejo" "textoEscudo textoEscudo nuevo" "casaca casaca casaca" "camisetaFoto camisetaFoto textoCasaca" "tifa tifa tifa" "fotoTifa1 textoTifa fotoTifa2" "fotoTifa3 textoTifa fotoTifa4" "campeones campeones campeones" "campeonesFoto1 campeonesFoto1 campeonesTexto" "campeonesFoto2 campeonesFoto2 campeonesTexto" "ligaNuñez ligaNuñez ligaNuñez" "ligaTexto Liga1 Liga2" "ligaTexto Liga1 Liga2" "primera primera primera" "primera1 primeraTexto primera2" "primera3 primeraTexto primera4" "pieDePagina pieDePagina pieDePagina";
+  grid-template-rows: 1fr 2fr 4fr 2fr 3fr 3fr 2fr 4fr 2fr 3fr 3fr 2fr 3fr 3fr 2fr 3fr 3fr 2fr 3fr 3fr 1fr;
   grid-template-columns: 2fr 2fr 2fr;
   -moz-column-gap: 10px;
        column-gap: 10px;
   row-gap: 10px;
   background-color: #1033a3;
+  height: 100vh;
+}
+.grillaDeHistoria .textoValores {
+  grid-area: textoValores;
 }
 .grillaDeHistoria .escudo--viejo {
   grid-area: viejo;
@@ -310,9 +315,16 @@
 .grillaDeHistoria .textoEscudo {
   grid-area: textoEscudo;
 }
+.grillaDeHistoria .ligaTexto {
+  grid-area: ligaTexto;
+}
+.grillaDeHistoria .primeraTexto {
+  grid-area: primeraTexto;
+}
 .grillaDeHistoria .valor,
 .grillaDeHistoria .casaca,
-.grillaDeHistoria .campeones {
+.grillaDeHistoria .campeones,
+.grillaDeHistoria .primera {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -387,31 +399,51 @@
 .grillaDeHistoria .valor {
   grid-area: valor;
 }
+.grillaDeHistoria .Liga1 {
+  grid-area: Liga1;
+}
+.grillaDeHistoria .Liga2 {
+  grid-area: Liga2;
+}
+.grillaDeHistoria .primera1 {
+  grid-area: primera1;
+}
+.grillaDeHistoria .primera2 {
+  grid-area: primera2;
+}
+.grillaDeHistoria .primera3 {
+  grid-area: primera3;
+}
+.grillaDeHistoria .primera4 {
+  grid-area: primera4;
+}
 
 @media screen and (max-width: 599px) and (orientation: portrait) {
   .grillaDeHistoria {
-    grid-template-areas: "cabecera" "valor" "valores" "textoValores" "escudo" "viejo" "nuevo" "textoEscudo" "casaca" "camisetaFoto" "textoCasaca" "tifa" "fotoTifa1" "fotoTifa2" "textoTifa" "fotoTifa3" "fotoTifa4" "campeones" "campeonesFoto1" "campeonesTexto" "campeonesFoto2" "ligaNuñez" "pieDePagina";
-    grid-template-rows: 138px 100px 300px 300px 100px 300px 300px 400px 100px 300px 500px 100px 250px 250px 200px 250px 250px 100px 200px 500px 200px 100px 138px;
+    grid-template-areas: "cabecera" "valor" "valores" "textoValores" "escudo" "viejo" "nuevo" "textoEscudo" "casaca" "camisetaFoto" "textoCasaca" "tifa" "fotoTifa1" "fotoTifa2" "textoTifa" "fotoTifa3" "fotoTifa4" "campeones" "campeonesFoto1" "campeonesTexto" "campeonesFoto2" "ligaNuñez" "Liga1" "ligaTexto" "Liga2" "primera" "primera1" "primera2" "primeraTexto" "primera3" "primera4" "pieDePagina";
+    grid-template-rows: 1fr 2fr 3fr 3fr 2fr 2fr 2fr 3fr 2fr 3fr 3fr 2fr 3fr 3fr 3fr 3fr 3fr 2fr 3fr 3fr 3fr 2fr 3fr 3fr 3fr 2fr 3fr 3fr 3fr 3fr 1fr;
     grid-template-columns: 1fr;
     -moz-column-gap: 10px;
          column-gap: 10px;
     row-gap: 10px;
+    height: 100vh;
   }
 }
 @media screen and (max-width: 599px) and (orientation: landscape) {
   .grillaDeHistoria {
-    grid-template-areas: "cabecera cabecera" "valor valor" "valores textoValores" "escudo escudo " "viejo nuevo" "textoEscudo textoEscudo" "casaca casaca" "textoCasaca camisetaFoto" "tifa tifa" "fotoTifa1 fotoTifa2" "textoTifa textoTifa" "fotoTifa3 fotoTifa4" "campeones campeones" "campeonesFoto1 campeonesTexto" "campeonesFoto2 campeonesTexto" "ligaNuñez ligaNuñez" "pieDePagina pieDePagina";
-    grid-template-rows: 138px 100px 600px 100px 300px 300px 100px 600px 100px 300px 300px 300px 100px 300px 320px 100px 138px;
+    grid-template-areas: "cabecera cabecera" "valor valor" "valores textoValores" "escudo escudo " "viejo nuevo" "textoEscudo textoEscudo" "casaca casaca" "textoCasaca camisetaFoto" "tifa tifa" "fotoTifa1 fotoTifa2" "textoTifa textoTifa" "fotoTifa3 fotoTifa4" "campeones campeones" "campeonesFoto1 campeonesTexto" "campeonesFoto2 campeonesTexto" "ligaNuñez ligaNuñez" "ligaTexto ligaTexto" "Liga1 Liga2" "primera primera" "primera1 primera2" "primeraTexto primeraTexto" "primera3 primera4" "pieDePagina pieDePagina";
+    grid-template-rows: 1fr 2fr 4fr 2fr 3fr 3fr 2fr 4fr 2fr 3fr 3fr 3fr 2fr 3fr 3fr 2fr 3fr 3fr 2fr 3fr 3fr 3fr 1fr;
     grid-template-columns: repeat(2, 1fr);
     -moz-column-gap: 10px;
          column-gap: 10px;
     row-gap: 10px;
+    height: 100vh;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 1199px) {
   .grillaDeHistoria {
-    grid-template-areas: "cabecera cabecera" "valor valor" "valores textoValores" "escudo escudo " "viejo nuevo" "textoEscudo textoEscudo" "casaca casaca" "textoCasaca camisetaFoto" "tifa tifa" "fotoTifa1 fotoTifa2" "textoTifa textoTifa" "fotoTifa3 fotoTifa4" "campeones campeones" "campeonesFoto1 campeonesTexto" "campeonesFoto2 campeonesTexto" "ligaNuñez ligaNuñez" "pieDePagina pieDePagina";
-    grid-template-rows: 138px 100px 600px 100px 300px 300px 100px 600px 100px 300px 300px 300px 100px 300px 320px 100px 138px;
+    grid-template-areas: "cabecera cabecera" "valor valor" "valores textoValores" "escudo escudo " "viejo nuevo" "textoEscudo textoEscudo" "casaca casaca" "textoCasaca camisetaFoto" "tifa tifa" "fotoTifa1 fotoTifa2" "textoTifa textoTifa" "fotoTifa3 fotoTifa4" "campeones campeones" "campeonesFoto1 campeonesTexto" "campeonesFoto2 campeonesTexto" "ligaNuñez ligaNuñez" "ligaTexto ligaTexto" "Liga1 Liga2" "primera primera" "primera1 primera2" "primeraTexto primeraTexto" "primera3 primera4" "pieDePagina pieDePagina";
+    grid-template-rows: 1fr 2fr 4fr 2fr 3fr 3fr 2fr 4fr 2fr 3fr 3fr 3fr 2fr 4fr 4fr 2fr 3fr 3fr 2fr 3fr 3fr 3fr 1fr;
     grid-template-columns: repeat(2, 1fr);
     -moz-column-gap: 10px;
          column-gap: 10px;

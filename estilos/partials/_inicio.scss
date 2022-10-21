@@ -34,7 +34,7 @@
         color: map-get($colores,colorDelca);
         border-radius: map-get($tamanos,borderRadius);
         background-color:black;
-        color: white;
+        color: map-get($colores,colorDelca);
     }
 
     .benditos{
@@ -112,6 +112,9 @@
         .copaTexto,
         .neyenTexto{
            font-size: map-get($tamanos, letraScreen);
+        }
+        .grande{
+            display: none;
         }
     }
 }

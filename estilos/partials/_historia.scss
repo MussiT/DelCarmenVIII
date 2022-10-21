@@ -16,13 +16,13 @@
     "campeonesFoto1 campeonesFoto1 campeonesTexto"
     "campeonesFoto2 campeonesFoto2 campeonesTexto"
     "ligaNuñez ligaNuñez ligaNuñez"
-    "ligaTexto Liga1 Liga2"
-    "ligaTexto Liga1 Liga2"
+    "ligaTexto Liga1 Liga1"
+    "ligaTexto Liga2 Liga2"
     "primera primera primera"
     "primera1 primeraTexto primera2"
     "primera3 primeraTexto primera4"
     "pieDePagina pieDePagina pieDePagina";
-    grid-template-rows: 1fr 2fr 4fr 2fr 3fr 3fr 2fr 4fr 2fr 3fr 3fr 2fr 3fr 3fr 2fr 3fr 3fr 2fr 3fr 3fr 1fr;
+    grid-template-rows:  1fr 2fr 4fr 2fr 3fr 3fr 2fr 4fr 2fr 3fr 3fr 2fr 3fr 3fr 2fr 3fr 3fr 2fr 3fr 3fr 1fr;
     grid-template-columns: 2fr 2fr 2fr;
     column-gap: 10px;
     row-gap: 10px;
@@ -141,6 +141,9 @@
     }
     .primera4{
         grid-area: primera4;
+    }
+    .primera{
+        grid-area: primera;
     }
     }
 

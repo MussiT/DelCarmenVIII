@@ -35,6 +35,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: black;
 }
 
 * {
@@ -113,7 +114,7 @@
   color: #1033a3;
   border-radius: 25px;
   background-color: black;
-  color: white;
+  color: #1033a3;
 }
 .grillaDeInicio .benditos {
   grid-area: benditos;
@@ -169,6 +170,9 @@
 .grillaDeInicio .neyenTexto {
     font-size: 15px;
   }
+  .grillaDeInicio .grande {
+    display: none;
+  }
 }
 @media screen and (max-width: 599px) and (orientation: landscape) {
   .grillaDeInicio {
@@ -201,7 +205,14 @@
   grid-template-areas: "cabecera cabecera cabecera cabecera cabecera cabecera cabecera" "lolo lolo lolo lolo lolo lolo lolo" "pache santi balta balta balta fabri rusca" "gato gato gato juan juan juan juan" "mussi mussi mussi mussi mussi mussi mussi" "crispa crispa crispa niño neyen neyen neyen" "pieDePagina pieDePagina pieDePagina pieDePagina pieDePagina  pieDePagina  pieDePagina";
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: 1fr 3fr 3fr 3fr 3fr 3fr 1fr;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  row-gap: 15px;
   height: 100vh;
+  background-image: url("../imagenes/cancha.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .grillaDePlantel .lolo {
   grid-area: lolo;
@@ -303,7 +314,7 @@
 }
 .grillaDeHistoria {
   display: grid;
-  grid-template-areas: "cabecera cabecera cabecera" "valor valor valor" "valores valores textoValores" "escudo escudo escudo" "textoEscudo textoEscudo viejo" "textoEscudo textoEscudo nuevo" "casaca casaca casaca" "camisetaFoto camisetaFoto textoCasaca" "tifa tifa tifa" "fotoTifa1 textoTifa fotoTifa2" "fotoTifa3 textoTifa fotoTifa4" "campeones campeones campeones" "campeonesFoto1 campeonesFoto1 campeonesTexto" "campeonesFoto2 campeonesFoto2 campeonesTexto" "ligaNuñez ligaNuñez ligaNuñez" "ligaTexto Liga1 Liga2" "ligaTexto Liga1 Liga2" "primera primera primera" "primera1 primeraTexto primera2" "primera3 primeraTexto primera4" "pieDePagina pieDePagina pieDePagina";
+  grid-template-areas: "cabecera cabecera cabecera" "valor valor valor" "valores valores textoValores" "escudo escudo escudo" "textoEscudo textoEscudo viejo" "textoEscudo textoEscudo nuevo" "casaca casaca casaca" "camisetaFoto camisetaFoto textoCasaca" "tifa tifa tifa" "fotoTifa1 textoTifa fotoTifa2" "fotoTifa3 textoTifa fotoTifa4" "campeones campeones campeones" "campeonesFoto1 campeonesFoto1 campeonesTexto" "campeonesFoto2 campeonesFoto2 campeonesTexto" "ligaNuñez ligaNuñez ligaNuñez" "ligaTexto Liga1 Liga1" "ligaTexto Liga2 Liga2" "primera primera primera" "primera1 primeraTexto primera2" "primera3 primeraTexto primera4" "pieDePagina pieDePagina pieDePagina";
   grid-template-rows: 1fr 2fr 4fr 2fr 3fr 3fr 2fr 4fr 2fr 3fr 3fr 2fr 3fr 3fr 2fr 3fr 3fr 2fr 3fr 3fr 1fr;
   grid-template-columns: 2fr 2fr 2fr;
   -moz-column-gap: 10px;
@@ -425,6 +436,9 @@
 }
 .grillaDeHistoria .primera4 {
   grid-area: primera4;
+}
+.grillaDeHistoria .primera {
+  grid-area: primera;
 }
 
 @media screen and (max-width: 599px) and (orientation: portrait) {
@@ -639,6 +653,7 @@
   grid-template-areas: "cabecera" "formulario" "pieDePagina";
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: repeat(3, auto);
+  height: 100%;
 }
 .grillaDeFormulario .fondo--formulario {
   background-image: url("../imagenes/fondo_form.jpg");
@@ -669,7 +684,7 @@
 .grillaDeFormulario .fondo--formulario::before {
   content: "";
   width: 100%;
-  height: 70%;
+  height: 100%;
   background-color: black;
   position: absolute;
   opacity: 0.6;

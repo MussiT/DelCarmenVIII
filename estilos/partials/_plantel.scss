@@ -10,7 +10,14 @@
     "pieDePagina pieDePagina pieDePagina pieDePagina pieDePagina  pieDePagina  pieDePagina";
     grid-template-columns: repeat(7,1fr);
     grid-template-rows: 1fr 3fr 3fr 3fr 3fr 3fr 1fr;
+    column-gap: 15px;
+    row-gap: 15px;
     height: 100vh;
+    background-image: url("../imagenes/cancha.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        // background-attachment: fixed;
     .lolo{
         grid-area: lolo;
     }

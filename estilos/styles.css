@@ -211,8 +211,10 @@
   height: 100vh;
   background-image: url("../imagenes/cancha.jpg");
   background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
+  position: absolute;
 }
 .grillaDePlantel .lolo {
   grid-area: lolo;
@@ -294,6 +296,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .grillaDePlantel .juan {
+    display: flex;
+    justify-content: flex-start;
   }
 }
 @media screen and (max-width: 599px) and (orientation: landscape) {

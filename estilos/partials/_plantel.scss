@@ -15,8 +15,10 @@
     height: 100vh;
     background-image: url("../imagenes/cancha.jpg");
         background-size: cover;
+        background-size: 100%;
         background-repeat: no-repeat;
         background-position: center;
+        position: absolute;
         // background-attachment: fixed;
     .lolo{
         grid-area: lolo;
@@ -122,6 +124,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+        .juan{
+            display: flex;
+            justify-content: flex-start;
         }
     }
 

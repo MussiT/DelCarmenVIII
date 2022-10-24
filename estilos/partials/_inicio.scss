@@ -77,12 +77,6 @@
         background-color: map-get($colores,colorDelca);
         color: white;
     }    
-    .grande{
-        transition: map-get($transitions, transitionInicio);
-        &:hover{
-            padding: 5px;
-        }
-    }
     }
 
 

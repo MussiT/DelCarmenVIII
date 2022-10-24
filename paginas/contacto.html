@@ -39,30 +39,30 @@
         <main class="fondo--formulario">
         <br>
         <br>
-        <form class="formulario">
+        <form class="formulario" action="https://formsubmit.co/ebb4d2cd437012f29ebd5b8805f66e7d" method="POST">
 <fieldset>
     <legend class="blanco">Datos personales</legend>
     <label for="nombre" class="blanco">NOMBRE</label>
     <br>
-    <input id="nombre" type="text" placeholder="Ingresa tu nombre" class="azul"> 
+    <input id="nombre" type="text" name="nombre" placeholder="Ingresa tu nombre" class="azul"> 
     <br>
     <label for="apellido" class="blanco">APELLIDO</label>
     <br>
-    <input id="apellido" type="text" placeholder="Ingresa tu apellido" class="azul">
+    <input id="apellido" type="text" name="apellido" placeholder="Ingresa tu apellido" class="azul">
     <br>
     <label for="telefono" class="blanco">TELEFONO</label>
     <br>
-    <input id="telefono" type="number" placeholder="Ingresa tu telefono" class="azul">
+    <input id="telefono" type="number" name="celular" placeholder="Ingresa tu telefono" class="azul">
     <br>
     <label for="email" class="blanco">EMAIL</label>
     <br>
-<input id="email" type="email" placeholder="Ingresa tu email" class="azul">
+<input id="email" type="email" name="email" placeholder="Ingresa tu email" class="azul">
 </fieldset>
 <fieldset>
     <legend class="blanco">¿Desde dónde nos alentas?</legend>
     <label for="barrio" class="blanco">BARRIO</label>
     <br>
-    <select class="azul">
+    <select class="azul" name="barrio">
         <option class="azul">Coghlan</option>
         <option class="azul">Saavedra</option>
         <option class="azul">Vicente Lopez</option>
@@ -76,13 +76,16 @@
     <legend class="blanco">Uno de nosotros</legend>
     <label for="comentarios" class="blanco">¡DEJANOS TU MENSAJE!</label>
     <br>
-    <textarea id="comentarios" class="azul"></textarea>
+    <textarea id="comentarios" class="azul" name="mensaje"></textarea>
     <br>
         <label class="blanco">Me considero hincha del delca</label>
         <input type="checkbox" class="azul">
     <input type="submit" class="enviar">
     <input type="reset" class="enviar" >
 </fieldset>
+
+<input type="hidden" name="_next" value="https://twitter.com/DelCarmenVIII/status/1162816590666194944">
+<input type="hidden" name="_captcha" value="false">
         </form>
         <br>
     </main>

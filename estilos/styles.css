@@ -151,12 +151,6 @@
   background-color: #1033a3;
   color: white;
 }
-.grillaDeInicio .grande {
-  transition: padding 0.5s;
-}
-.grillaDeInicio .grande:hover {
-  padding: 5px;
-}
 
 @media screen and (max-width: 599px) and (orientation: portrait) {
   .grillaDeInicio {
@@ -168,7 +162,7 @@
   .grillaDeInicio .santiTexto,
 .grillaDeInicio .copaTexto,
 .grillaDeInicio .neyenTexto {
-    font-size: 15px;
+    font-size: 30px;
   }
   .grillaDeInicio .grande {
     display: none;
@@ -184,7 +178,7 @@
   .grillaDeInicio .santiTexto,
 .grillaDeInicio .copaTexto,
 .grillaDeInicio .neyenTexto {
-    font-size: 15px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 1199px) {
@@ -197,7 +191,7 @@
   .grillaDeInicio .santiTexto,
 .grillaDeInicio .copaTexto,
 .grillaDeInicio .neyenTexto {
-    font-size: 15px;
+    font-size: 30px;
   }
 }
 .grillaDePlantel {
@@ -209,12 +203,7 @@
        column-gap: 15px;
   row-gap: 15px;
   height: 100vh;
-  background-image: url("../imagenes/cancha.jpg");
-  background-size: cover;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
+  background-color: #1033a3;
 }
 .grillaDePlantel .lolo {
   grid-area: lolo;
@@ -273,16 +262,6 @@
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: center;
-}
-.grillaDePlantel section p {
-  display: flex;
-  padding: 10px;
-  border: 2px solid black;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  font-size: 30px;
-  background-color: #1033a3;
 }
 
 @media screen and (max-width: 599px) and (orientation: portrait) {

@@ -16,19 +16,19 @@
             grid-area: formulario;
             .enviar{
                 cursor: pointer;
-                background-color: #1033a3;
-                color: white;
+                background-color: #212850;
+                color: #BEA881;
                 transition: map-get($transitions, transitionContacto);
                 &:hover{
                     padding: 2px;
                 }
             }
             .azul{
-                background-color: #1033a3;
-                color:white
+                background-color: #212850;
+                color:#BEA881;
             }
             .blanco{
-                color: white;
+                color: #BEA881;
             }
             }        
     }

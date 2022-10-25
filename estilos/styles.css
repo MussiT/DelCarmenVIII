@@ -10,10 +10,7 @@
 
 .grillaDeGaleria .fotos--galeria {
   margin: 15px;
-  border-top: 10px solid #BEA881;
-  border-right: 10px solid black;
-  border-left: 10px solid black;
-  border-bottom: 10px solid #BEA881;
+  border: 10px solid #BEA881;
   width: 370px;
   height: 325px;
   border-radius: 6px;
@@ -658,19 +655,19 @@
 }
 .grillaDeFormulario .fondo--formulario .formulario .enviar {
   cursor: pointer;
-  background-color: #1033a3;
-  color: white;
+  background-color: #212850;
+  color: #BEA881;
   transition: padding 0.5s;
 }
 .grillaDeFormulario .fondo--formulario .formulario .enviar:hover {
   padding: 2px;
 }
 .grillaDeFormulario .fondo--formulario .formulario .azul {
-  background-color: #1033a3;
-  color: white;
+  background-color: #212850;
+  color: #BEA881;
 }
 .grillaDeFormulario .fondo--formulario .formulario .blanco {
-  color: white;
+  color: #BEA881;
 }
 .grillaDeFormulario .fondo--formulario::before {
   content: "";

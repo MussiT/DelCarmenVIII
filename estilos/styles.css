@@ -50,7 +50,7 @@
 } */
 .cabecera {
   grid-area: cabecera;
-  background-image: linear-gradient(to left, #1033a3, black);
+  background-image: linear-gradient(to left, #212850, black);
 }
 .cabecera .cabecera--foto {
   display: inline-block;
@@ -80,7 +80,7 @@
   font-weight: 900;
   grid-area: pieDePagina;
   background-color: black;
-  color: #1033a3;
+  color: #212850;
 }
 
 @font-face {
@@ -93,7 +93,7 @@
   grid-template-rows: 1fr 1fr 2fr 1fr 2fr 2fr 1fr;
   grid-template-columns: 2fr 2fr 2fr;
   height: 100vh;
-  background-color: #1033a3;
+  background-color: #212850;
 }
 .grillaDeInicio .tittle {
   grid-area: tittle;
@@ -114,7 +114,7 @@
   color: #1033a3;
   border-radius: 25px;
   background-color: black;
-  color: #1033a3;
+  color: #212850;
 }
 .grillaDeInicio .benditos {
   grid-area: benditos;
@@ -123,7 +123,7 @@
   align-items: center;
   padding: 20px;
   margin: 20px;
-  background-color: #1033a3;
+  background-color: #212850;
 }
 .grillaDeInicio .santi {
   grid-area: santi;
@@ -137,19 +137,20 @@
 .grillaDeInicio .santiTexto {
   grid-area: santiTexto;
   text-align: center;
-  background-color: #1033a3;
-  color: white;
+  background-color: #212850;
+  color: #BEA881;
 }
 .grillaDeInicio .copaTexto {
   grid-area: copaTexto;
   text-align: center;
   background-color: white;
+  color: #BEA881;
 }
 .grillaDeInicio .neyenTexto {
   grid-area: neyenTexto;
   text-align: center;
-  background-color: #1033a3;
-  color: white;
+  background-color: #212850;
+  color: #BEA881;
 }
 
 @media screen and (max-width: 599px) and (orientation: portrait) {
@@ -196,14 +197,14 @@
 }
 .grillaDePlantel {
   display: grid;
-  grid-template-areas: "cabecera cabecera cabecera cabecera cabecera cabecera cabecera" "lolo lolo lolo lolo lolo lolo lolo" "pache santi balta balta balta fabri rusca" "gato gato gato juan juan juan juan" "mussi mussi mussi mussi mussi mussi mussi" "crispa crispa crispa niño neyen neyen neyen" "pieDePagina pieDePagina pieDePagina pieDePagina pieDePagina  pieDePagina  pieDePagina";
+  grid-template-areas: "cabecera cabecera cabecera cabecera cabecera cabecera cabecera" "lolo lolo lolo lolo lolo lolo lolo" "pache santi santi balta fabri fabri rusca" "pache gato gato balta juan juan rusca" "mussi mussi mussi mussi mussi mussi mussi" "crispa crispa crispa niño neyen neyen neyen" "pieDePagina pieDePagina pieDePagina pieDePagina pieDePagina  pieDePagina  pieDePagina";
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: 1fr 3fr 3fr 3fr 3fr 3fr 1fr;
   -moz-column-gap: 15px;
        column-gap: 15px;
   row-gap: 15px;
   height: 100vh;
-  background-color: #1033a3;
+  background-color: #071152;
 }
 .grillaDePlantel .lolo {
   grid-area: lolo;
@@ -212,16 +213,19 @@
   grid-area: pache;
   display: flex;
   justify-content: end;
+  align-items: flex-start;
 }
 .grillaDePlantel .santi2 {
   grid-area: santi;
   display: flex;
   justify-content: start;
+  align-items: flex-start;
 }
 .grillaDePlantel .balta {
   grid-area: balta;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
 }
 .grillaDePlantel .fabri {
   grid-area: fabri;
@@ -232,14 +236,16 @@
   grid-area: rusca;
   display: flex;
   justify-content: start;
+  align-items: flex-start;
 }
 .grillaDePlantel .juan {
   grid-area: juan;
+  justify-content: start;
 }
 .grillaDePlantel .gato {
   grid-area: gato;
   display: flex;
-  justify-content: space-around;
+  justify-content: end;
 }
 .grillaDePlantel .mussi {
   grid-area: mussi;
@@ -266,7 +272,7 @@
 
 @media screen and (max-width: 599px) and (orientation: portrait) {
   .grillaDePlantel {
-    grid-template-areas: "cabecera cabecera cabecera" "lolo lolo lolo" "pache balta rusca" "santi santi fabri" "gato gato juan" "mussi mussi mussi" "crispa niño neyen" "pieDePagina pieDePagina pieDePagina";
+    grid-template-areas: "cabecera cabecera cabecera" "lolo lolo lolo" "pache balta rusca" "santi balta fabri" "gato balta juan" "mussi mussi mussi" "crispa niño neyen" "pieDePagina pieDePagina pieDePagina";
     grid-template-columns: auto auto auto;
     grid-template-rows: 1fr 3fr 3fr 3fr 3fr 3fr 3fr 1fr;
     height: 100vh;
@@ -283,7 +289,7 @@
 }
 @media screen and (max-width: 599px) and (orientation: landscape) {
   .grillaDePlantel {
-    grid-template-areas: "cabecera cabecera cabecera cabecera cabecera" "lolo lolo lolo lolo lolo" "pache santi balta fabri rusca" "gato gato gato juan juan" "mussi mussi mussi mussi mussi" "crispa crispa niño neyen neyen" "pieDePagina pieDePagina pieDePagina pieDePagina pieDePagina";
+    grid-template-areas: "cabecera cabecera cabecera cabecera cabecera" "lolo lolo lolo lolo lolo" "pache santi balta fabri rusca" "gato gato balta juan juan" "mussi mussi mussi mussi mussi" "crispa crispa niño neyen neyen" "pieDePagina pieDePagina pieDePagina pieDePagina pieDePagina";
     grid-template-columns: repeat(5, auto);
     grid-template-rows: 1fr 3fr 3fr 3fr 3fr 3fr 1fr;
     height: 100vh;
@@ -291,7 +297,7 @@
 }
 @media screen and (min-width: 600px) and (max-width: 1199px) {
   .grillaDePlantel {
-    grid-template-areas: "cabecera cabecera cabecera cabecera cabecera" "lolo lolo lolo lolo lolo" "pache santi balta fabri rusca" "gato gato gato juan juan" "mussi mussi mussi mussi mussi" "crispa crispa niño neyen neyen" "pieDePagina pieDePagina pieDePagina pieDePagina pieDePagina";
+    grid-template-areas: "cabecera cabecera cabecera cabecera cabecera" "lolo lolo lolo lolo lolo" "pache santi balta fabri rusca" "gato gato balta juan juan" "mussi mussi mussi mussi mussi" "crispa crispa niño neyen neyen" "pieDePagina pieDePagina pieDePagina pieDePagina pieDePagina";
     grid-template-columns: repeat(5, auto);
     grid-template-rows: 1fr 3fr 3fr 3fr 3fr 3fr 1fr;
     height: 100vh;
@@ -305,7 +311,7 @@
   -moz-column-gap: 10px;
        column-gap: 10px;
   row-gap: 10px;
-  background-color: #1033a3;
+  background-color: #212850;
   height: 100vh;
 }
 .grillaDeHistoria .textoValores {
@@ -464,7 +470,7 @@
   grid-template-rows: 1fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr;
   grid-template-columns: repeat(3, auto);
   height: 100vh;
-  background-color: #1033a3;
+  background-color: #212850;
 }
 .grillaDeGaleria .titulouno {
   grid-area: titulouno;

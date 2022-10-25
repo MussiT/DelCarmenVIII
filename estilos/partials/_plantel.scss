@@ -3,8 +3,8 @@
     grid-template-areas: 
     "cabecera cabecera cabecera cabecera cabecera cabecera cabecera"
     "lolo lolo lolo lolo lolo lolo lolo"
-    "pache santi balta balta balta fabri rusca"
-    "gato gato gato juan juan juan juan"
+    "pache santi santi balta fabri fabri rusca"
+    "pache gato gato balta juan juan rusca"
     "mussi mussi mussi mussi mussi mussi mussi"
     "crispa crispa crispa niño neyen neyen neyen"
     "pieDePagina pieDePagina pieDePagina pieDePagina pieDePagina  pieDePagina  pieDePagina";
@@ -22,18 +22,21 @@
         grid-area: pache;
         display: flex;
         justify-content: end;
+        align-items: flex-start;
     }
     
     .santi2{
         grid-area: santi; 
         display: flex;
         justify-content:start;
+        align-items: flex-start;
     }
     
     .balta{
         grid-area: balta;
         display: flex;
         justify-content:center;
+        align-items: flex-start;
     }
     
     .fabri{
@@ -46,17 +49,18 @@
         grid-area: rusca;
         display: flex;
         justify-content:start;
+        align-items: flex-start;
     }
     
     .juan{
         grid-area: juan;
-       
+        justify-content:start;
     }
     
     .gato{
         grid-area: gato;
         display: flex;
-        justify-content: space-around;
+        justify-content: end;
     }
     
     .mussi{
@@ -96,8 +100,8 @@
         "cabecera cabecera cabecera"
         "lolo lolo lolo"
         "pache balta rusca"
-        "santi santi fabri"
-        "gato gato juan"
+        "santi balta fabri"
+        "gato balta juan"
         "mussi mussi mussi"
         "crispa niño neyen" 
         "pieDePagina pieDePagina pieDePagina";
@@ -124,7 +128,7 @@
         "cabecera cabecera cabecera cabecera cabecera"
         "lolo lolo lolo lolo lolo"
         "pache santi balta fabri rusca"
-        "gato gato gato juan juan"
+        "gato gato balta juan juan"
         "mussi mussi mussi mussi mussi"
         "crispa crispa niño neyen neyen"
         "pieDePagina pieDePagina pieDePagina pieDePagina pieDePagina";
@@ -141,7 +145,7 @@
             "cabecera cabecera cabecera cabecera cabecera"
             "lolo lolo lolo lolo lolo"
             "pache santi balta fabri rusca"
-            "gato gato gato juan juan"
+            "gato gato balta juan juan"
             "mussi mussi mussi mussi mussi"
             "crispa crispa niño neyen neyen"
             "pieDePagina pieDePagina pieDePagina pieDePagina pieDePagina";

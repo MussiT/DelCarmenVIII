@@ -656,7 +656,7 @@
 .grillaDeFormulario .fondo--formulario .formulario .enviar {
   cursor: pointer;
   background-color: #212850;
-  color: #BEA881;
+  color: white;
   transition: padding 0.5s;
 }
 .grillaDeFormulario .fondo--formulario .formulario .enviar:hover {
@@ -664,10 +664,10 @@
 }
 .grillaDeFormulario .fondo--formulario .formulario .azul {
   background-color: #212850;
-  color: #BEA881;
+  color: white;
 }
 .grillaDeFormulario .fondo--formulario .formulario .blanco {
-  color: #BEA881;
+  color: white;
 }
 .grillaDeFormulario .fondo--formulario::before {
   content: "";

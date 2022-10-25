@@ -17,7 +17,7 @@
             .enviar{
                 cursor: pointer;
                 background-color: #212850;
-                color: #BEA881;
+                color: white;
                 transition: map-get($transitions, transitionContacto);
                 &:hover{
                     padding: 2px;
@@ -25,10 +25,10 @@
             }
             .azul{
                 background-color: #212850;
-                color:#BEA881;
+                color: white;
             }
             .blanco{
-                color: #BEA881;
+                color: white;
             }
             }        
     }

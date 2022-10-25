@@ -20,7 +20,7 @@
         margin: 20px;
         align-items: center;
         justify-content: center;
-        color: #1033a3;
+        color: #BEA881;
         border-radius: map-get($tamanos,borderRadius);
         background-color:black;
     }
@@ -31,10 +31,9 @@
         margin: 10px;
         align-items: center;
         justify-content: center;
-        color: #1033a3;
         border-radius: map-get($tamanos,borderRadius);
         background-color:black;
-        color: map-get($colores,colorDelca);
+        color: #BEA881;
     }
 
     .benditos{
